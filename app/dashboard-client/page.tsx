@@ -3,7 +3,7 @@ import { useAuth, useUser } from '@clerk/nextjs'
 import React from 'react'
 
 export default function DashboardClientPage() {
-  const { isLoaded: isLoadedAuth, userId, sessionId, getToken } = useAuth()
+  const { isLoaded: isLoadedAuth, userId, sessionId /*getToken*/ } = useAuth()
   const { isLoaded: isLoadedUser, isSignedIn, user } = useUser()
 
   //console.log(user)
