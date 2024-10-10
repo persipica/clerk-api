@@ -4,8 +4,8 @@ import React from 'react'
 export default async function DashboardPage() {
   const { userId } = auth()
   const user = await currentUser()
-  console.log(userId)
-  console.log(user)
+  // console.log(userId)
+  // console.log(user)
 
   return (
     <div>

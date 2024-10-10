@@ -6,7 +6,7 @@ export default function DashboardClientPage() {
   const { isLoaded: isLoadedAuth, userId, sessionId, getToken } = useAuth()
   const { isLoaded: isLoadedUser, isSignedIn, user } = useUser()
 
-  console.log(user)
+  //console.log(user)
 
   if (!isLoadedAuth || !userId) {
     return null
