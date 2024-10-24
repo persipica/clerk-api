@@ -20,6 +20,17 @@ export default function Header() {
             </Link>
           </div>
           <div className="flex items-center font-bold">
+            <Link href="/repos" className="text-gray-300 hover:text-white mr-4">
+              Repository
+            </Link>
+            <Link
+              href="/courses"
+              className="text-gray-300 hover:text-white mr-4"
+            >
+              Courses
+            </Link>
+          </div>
+          <div className="flex items-center font-bold">
             <SignedOut>
               <div className="text-gray-300 hover:text-white mr-4">
                 <SignInButton />
