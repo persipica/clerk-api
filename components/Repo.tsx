@@ -1,6 +1,5 @@
 import { username } from '@/app/constants'
 import Link from 'next/link'
-import { resolve } from 'path'
 import { FaCodeBranch, FaEye, FaStar } from 'react-icons/fa'
 
 interface RepoProps {

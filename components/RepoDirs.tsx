@@ -10,7 +10,12 @@ const RepoDirs: React.FC<RepoProps> = async ({ name }) => {
   await new Promise((resolve) => setTimeout(resolve, 1000))
 
   const contents = await response.json()
-  const dirs = contents.filter((content: any) => content.type === 'dir')
+  const dirs = contents.filter(
+    (
+      /* eslint-disable @typescript-eslint/no-explicit-any */
+      content: any
+    ) => content.type === 'dir'
+  )
   // console.log(dirs)
   return (
     <div className="mt-2 ">
